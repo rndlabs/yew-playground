@@ -23,9 +23,9 @@ pub fn App() -> Html {
                 // iterate over the accounts and print them
                 for acc in accounts.iter() {
                     // if the first account, then set the address
-                    if acc == &accounts[0] {
-                        address.set(*acc);
-                    }
+                    // if acc == &accounts[0] {
+                    //     address.set(*acc);
+                    // }
                     log!("account", JsValue::from(acc.to_string()));
                 }
 
